@@ -1,0 +1,26 @@
+bool isHappy(int n) {
+    int rem,x=n,s=0;
+    if(n==1)
+    return true;
+    while(n>4)
+    {
+    while(n!=0)
+    {
+        rem=n%10;
+        s=s+rem*rem;
+        n=n/10;
+    }
+    if(s==1) return true;
+    n=s;
+    s=0;
+    }
+    return false;
+}
+    
+    
+
+    
+
+  
+   
+    
